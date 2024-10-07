@@ -1,0 +1,1225 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		33CC111A2044C6BA0003C045 /* Flutter Assemble */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 33CC111B2044C6BA0003C045 /* Build configuration list for PBXAggregateTarget "Flutter Assemble" */;
+			buildPhases = (
+				33CC111E2044C6BF0003C045 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Flutter Assemble";
+			productName = FLX;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		11DE08D8E4C99FC22DF5BCA7 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AE5BEDA4BD2CBCD8955BF9 /* Pods_Runner.framework */; };
+		335BBD1B22A9A15E00E9071D /* GeneratedPluginRegistrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */; };
+		33CC10F12044A3C60003C045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC10F02044A3C60003C045 /* AppDelegate.swift */; };
+		33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F22044A3C60003C045 /* Assets.xcassets */; };
+		33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC11122044BFA00003C045 /* MainFlutterWindow.swift */; };
+		3C1717AD29B48FFA00B19B27 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717AC29B48FFA00B19B27 /* Math.swift */; };
+		3C1717AF29B4901000B19B27 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717AE29B4901000B19B27 /* Mesh.swift */; };
+		3C1717B129B4902500B19B27 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717B029B4902500B19B27 /* Engine.swift */; };
+		3C1717B329B4903800B19B27 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717B229B4903800B19B27 /* Preferences.swift */; };
+		3C1717B529B4904C00B19B27 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717B429B4904C00B19B27 /* Heap.swift */; };
+		3C1717B729B4905700B19B27 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717B629B4905700B19B27 /* Types.swift */; };
+		3C1717B929B4906700B19B27 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717B829B4906700B19B27 /* Node.swift */; };
+		3C1717BB29B4907800B19B27 /* Solid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717BA29B4907800B19B27 /* Solid.swift */; };
+		3C1717BE29B490C200B19B27 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717BD29B490C200B19B27 /* KeyCodes.swift */; };
+		3C1717C029B490D100B19B27 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717BF29B490D100B19B27 /* Mouse.swift */; };
+		3C1717C229B490DF00B19B27 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717C129B490DF00B19B27 /* Keyboard.swift */; };
+		3C1717C529B490FC00B19B27 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717C429B490FC00B19B27 /* Camera.swift */; };
+		3C1717C729B4910800B19B27 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717C629B4910800B19B27 /* CameraManager.swift */; };
+		3C1717C929B4911400B19B27 /* DebugCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717C829B4911400B19B27 /* DebugCamera.swift */; };
+		3C1717CC29B4914500B19B27 /* Skybox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717CB29B4914500B19B27 /* Skybox.swift */; };
+		3C1717CE29B4915300B19B27 /* MeshLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717CD29B4915300B19B27 /* MeshLibrary.swift */; };
+		3C1717D029B4916800B19B27 /* RenderPipelineState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717CF29B4916800B19B27 /* RenderPipelineState.swift */; };
+		3C1717D229B4917800B19B27 /* RenderPipelineDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717D129B4917800B19B27 /* RenderPipelineDescriptor.swift */; };
+		3C1717D429B4918D00B19B27 /* ComputePipelineState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717D329B4918D00B19B27 /* ComputePipelineState.swift */; };
+		3C1717D629B491A000B19B27 /* ComputePipelineDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717D529B491A000B19B27 /* ComputePipelineDescriptor.swift */; };
+		3C1717D829B491AE00B19B27 /* VertexDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717D729B491AE00B19B27 /* VertexDescriptor.swift */; };
+		3C1717DA29B491BD00B19B27 /* DepthStencilStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717D929B491BD00B19B27 /* DepthStencilStateLibrary.swift */; };
+		3C1717DD29B491DF00B19B27 /* Transform.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717DC29B491DF00B19B27 /* Transform.metal */; };
+		3C1717DF29B491EF00B19B27 /* RayTracing.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717DE29B491EF00B19B27 /* RayTracing.metal */; };
+		3C1717E129B491FC00B19B27 /* PhongShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717E029B491FC00B19B27 /* PhongShader.metal */; };
+		3C1717E329B4921B00B19B27 /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717E229B4921B00B19B27 /* Lighting.metal */; };
+		3C1717EA29B4937200B19B27 /* RenderableScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717E929B4937200B19B27 /* RenderableScene.swift */; };
+		3C1717ED29B4938C00B19B27 /* StaticRTScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717EC29B4938C00B19B27 /* StaticRTScene.swift */; };
+		3C1717EF29B493A000B19B27 /* DynamicRTScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717EE29B493A000B19B27 /* DynamicRTScene.swift */; };
+		3C1717F129B493B500B19B27 /* PhongShadingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717F029B493B500B19B27 /* PhongShadingScene.swift */; };
+		3C1717F429B493CE00B19B27 /* Sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717F329B493CE00B19B27 /* Sandbox.swift */; };
+		3C1717FC29B4940900B19B27 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717FB29B4940900B19B27 /* SceneManager.swift */; };
+		3C1717FE29B4941400B19B27 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1717FD29B4941400B19B27 /* GameScene.swift */; };
+		3C17180129B4945000B19B27 /* RendererManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17180029B4945000B19B27 /* RendererManager.swift */; };
+		3C17180429B4946700B19B27 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17180329B4946700B19B27 /* Renderer.swift */; };
+		3C17180629B4947400B19B27 /* RayTracingRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17180529B4947400B19B27 /* RayTracingRenderer.swift */; };
+		3C17180829B4948800B19B27 /* PhongRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17180729B4948800B19B27 /* PhongRenderer.swift */; };
+		3C17180B29B494A800B19B27 /* RendererView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17180A29B494A800B19B27 /* RendererView.swift */; };
+		3C17180D29B494B700B19B27 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17180C29B494B700B19B27 /* GameViewController.swift */; };
+		3C17180F29B494C600B19B27 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17180E29B494C600B19B27 /* GameView.swift */; };
+		3C17181129B494D800B19B27 /* MetalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C17181029B494D800B19B27 /* MetalView.storyboard */; };
+		3C20588229D0287300423DA2 /* AnimationCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20588129D0287300423DA2 /* AnimationCamera.swift */; };
+		3C2B16812A166FB1006CDD75 /* HarmonicCubes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2B16802A166FB1006CDD75 /* HarmonicCubes.swift */; };
+		3C54789229B98D7D00D20911 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54789129B98D7D00D20911 /* Custom.swift */; };
+		3C54789429B98E0900D20911 /* SceneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54789329B98E0900D20911 /* SceneSettings.swift */; };
+		3C8C03DE2A3A0AF8001F0058 /* Skybox.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C03DD2A3A0AF8001F0058 /* Skybox.metal */; };
+		3C8C03E02A3A12D5001F0058 /* EnchantingGlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C03DF2A3A12D5001F0058 /* EnchantingGlow.swift */; };
+		3CA9C92E2A39A06F00B4DBED /* Ocean.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9C92D2A39A06F00B4DBED /* Ocean.metal */; };
+		3CC00A582A3444EF00602E75 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC00A572A3444EF00602E75 /* Ocean.swift */; };
+		3CD0114629B3A8700009DEC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0114529B3A8700009DEC6 /* ContentView.swift */; };
+		3CD0114829B3B4D70009DEC6 /* FlutterCommunicationBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0114729B3B4D70009DEC6 /* FlutterCommunicationBridge.swift */; };
+		3CD0114A29B3BE840009DEC6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0114929B3BE840009DEC6 /* ContentViewModel.swift */; };
+		3CD0114C29B3BED60009DEC6 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0114B29B3BED60009DEC6 /* Sidebar.swift */; };
+		3CD0114F29B3BEF80009DEC6 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0114E29B3BEF80009DEC6 /* TabButton.swift */; };
+		3CD0115129B3BF150009DEC6 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0115029B3BF150009DEC6 /* BlurView.swift */; };
+		3CE728B129B629060073AC4C /* FlutterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE728B029B629060073AC4C /* FlutterModels.swift */; };
+		3CFEACDF29B4F23600440CF5 /* NightCity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB2629B4F23500440CF5 /* NightCity.jpg */; };
+		3CFEAD2829B4F23600440CF5 /* Beach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7229B4F23500440CF5 /* Beach.jpeg */; };
+		3CFEAD2929B4F23600440CF5 /* Icosphere.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7529B4F23500440CF5 /* Icosphere.mtl */; };
+		3CFEAD2A29B4F23600440CF5 /* Icosphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7629B4F23500440CF5 /* Icosphere.obj */; };
+		3CFEAD2B29B4F23600440CF5 /* Torus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7829B4F23500440CF5 /* Torus.obj */; };
+		3CFEAD2C29B4F23600440CF5 /* Torus.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7929B4F23500440CF5 /* Torus.mtl */; };
+		3CFEAD2D29B4F23600440CF5 /* Cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7B29B4F23500440CF5 /* Cube.obj */; };
+		3CFEAD2E29B4F23600440CF5 /* Cube.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7C29B4F23500440CF5 /* Cube.mtl */; };
+		3CFEAD2F29B4F23600440CF5 /* Cone.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7E29B4F23500440CF5 /* Cone.obj */; };
+		3CFEAD3029B4F23600440CF5 /* Cone.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB7F29B4F23500440CF5 /* Cone.mtl */; };
+		3CFEAD3129B4F23600440CF5 /* Sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8129B4F23500440CF5 /* Sphere.obj */; };
+		3CFEAD3229B4F23600440CF5 /* Sphere.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8229B4F23500440CF5 /* Sphere.mtl */; };
+		3CFEAD3329B4F23600440CF5 /* Plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8429B4F23500440CF5 /* Plane.obj */; };
+		3CFEAD3429B4F23600440CF5 /* Plane.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8529B4F23500440CF5 /* Plane.mtl */; };
+		3CFEAD3529B4F23600440CF5 /* Monkey.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8729B4F23500440CF5 /* Monkey.mtl */; };
+		3CFEAD3629B4F23600440CF5 /* Monkey.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8829B4F23500440CF5 /* Monkey.obj */; };
+		3CFEAD3729B4F23600440CF5 /* Cylinder.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8A29B4F23500440CF5 /* Cylinder.mtl */; };
+		3CFEAD3829B4F23600440CF5 /* Cylinder.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8B29B4F23500440CF5 /* Cylinder.obj */; };
+		3CFEAD3929B4F23600440CF5 /* Jungle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8C29B4F23500440CF5 /* Jungle.jpg */; };
+		3CFEAD3A29B4F23600440CF5 /* Sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8D29B4F23500440CF5 /* Sky.jpg */; };
+		3CFEAD3B29B4F23600440CF5 /* chest.obj in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB8F29B4F23500440CF5 /* chest.obj */; };
+		3CFEAD3C29B4F23600440CF5 /* chest_02_Base_Color.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9029B4F23500440CF5 /* chest_02_Base_Color.png */; };
+		3CFEAD3D29B4F23600440CF5 /* chest_01_Roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9129B4F23500440CF5 /* chest_01_Roughness.png */; };
+		3CFEAD3E29B4F23600440CF5 /* chest_02_Metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9229B4F23500440CF5 /* chest_02_Metallic.png */; };
+		3CFEAD3F29B4F23600440CF5 /* chest_02_Roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9329B4F23500440CF5 /* chest_02_Roughness.png */; };
+		3CFEAD4029B4F23600440CF5 /* chest_01_Base_Color.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9429B4F23500440CF5 /* chest_01_Base_Color.png */; };
+		3CFEAD4129B4F23600440CF5 /* chest_02_Mixed_AO.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9529B4F23500440CF5 /* chest_02_Mixed_AO.png */; };
+		3CFEAD4229B4F23600440CF5 /* chest_01_Metallic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9629B4F23500440CF5 /* chest_01_Metallic.png */; };
+		3CFEAD4329B4F23600440CF5 /* chest_01_Mixed_AO.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9729B4F23500440CF5 /* chest_01_Mixed_AO.png */; };
+		3CFEAD4429B4F23600440CF5 /* chest.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 3CFEAB9829B4F23500440CF5 /* chest.mtl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33CC111F2044C79F0003C045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33CC10E52044A3C60003C045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CC111A2044C6BA0003C045;
+			remoteInfo = FLX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33CC110E2044A8840003C045 /* Bundle Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Bundle Framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EC1ECEDD37930C07F6F9AAD /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		333000ED22D3DE5D00554162 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedPluginRegistrant.swift; sourceTree = "<group>"; };
+		33CC10ED2044A3C60003C045 /* blue_engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blue_engine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CC10F02044A3C60003C045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33CC10F22044A3C60003C045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Runner/Assets.xcassets; sourceTree = "<group>"; };
+		33CC10F72044A3C60003C045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Runner/Info.plist; sourceTree = "<group>"; };
+		33CC11122044BFA00003C045 /* MainFlutterWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlutterWindow.swift; sourceTree = "<group>"; };
+		33CEB47222A05771004F2AC0 /* Flutter-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Flutter-Debug.xcconfig"; sourceTree = "<group>"; };
+		33CEB47422A05771004F2AC0 /* Flutter-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Flutter-Release.xcconfig"; sourceTree = "<group>"; };
+		33CEB47722A0578A004F2AC0 /* Flutter-Generated.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Flutter-Generated.xcconfig"; path = "ephemeral/Flutter-Generated.xcconfig"; sourceTree = "<group>"; };
+		33E51913231747F40026EE4D /* DebugProfile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DebugProfile.entitlements; sourceTree = "<group>"; };
+		33E51914231749380026EE4D /* Release.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Release.entitlements; sourceTree = "<group>"; };
+		33E5194F232828860026EE4D /* AppInfo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppInfo.xcconfig; sourceTree = "<group>"; };
+		3462DE1167094CC924443280 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		3C1717AC29B48FFA00B19B27 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		3C1717AE29B4901000B19B27 /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		3C1717B029B4902500B19B27 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		3C1717B229B4903800B19B27 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		3C1717B429B4904C00B19B27 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		3C1717B629B4905700B19B27 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		3C1717B829B4906700B19B27 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		3C1717BA29B4907800B19B27 /* Solid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solid.swift; sourceTree = "<group>"; };
+		3C1717BD29B490C200B19B27 /* KeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCodes.swift; sourceTree = "<group>"; };
+		3C1717BF29B490D100B19B27 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+		3C1717C129B490DF00B19B27 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		3C1717C429B490FC00B19B27 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		3C1717C629B4910800B19B27 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		3C1717C829B4911400B19B27 /* DebugCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugCamera.swift; sourceTree = "<group>"; };
+		3C1717CB29B4914500B19B27 /* Skybox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skybox.swift; sourceTree = "<group>"; };
+		3C1717CD29B4915300B19B27 /* MeshLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshLibrary.swift; sourceTree = "<group>"; };
+		3C1717CF29B4916800B19B27 /* RenderPipelineState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineState.swift; sourceTree = "<group>"; };
+		3C1717D129B4917800B19B27 /* RenderPipelineDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderPipelineDescriptor.swift; sourceTree = "<group>"; };
+		3C1717D329B4918D00B19B27 /* ComputePipelineState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputePipelineState.swift; sourceTree = "<group>"; };
+		3C1717D529B491A000B19B27 /* ComputePipelineDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputePipelineDescriptor.swift; sourceTree = "<group>"; };
+		3C1717D729B491AE00B19B27 /* VertexDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertexDescriptor.swift; sourceTree = "<group>"; };
+		3C1717D929B491BD00B19B27 /* DepthStencilStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthStencilStateLibrary.swift; sourceTree = "<group>"; };
+		3C1717DC29B491DF00B19B27 /* Transform.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Transform.metal; sourceTree = "<group>"; };
+		3C1717DE29B491EF00B19B27 /* RayTracing.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RayTracing.metal; sourceTree = "<group>"; };
+		3C1717E029B491FC00B19B27 /* PhongShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PhongShader.metal; sourceTree = "<group>"; };
+		3C1717E229B4921B00B19B27 /* Lighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Lighting.metal; sourceTree = "<group>"; };
+		3C1717E629B4930C00B19B27 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
+		3C1717E929B4937200B19B27 /* RenderableScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderableScene.swift; sourceTree = "<group>"; };
+		3C1717EC29B4938C00B19B27 /* StaticRTScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticRTScene.swift; sourceTree = "<group>"; };
+		3C1717EE29B493A000B19B27 /* DynamicRTScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicRTScene.swift; sourceTree = "<group>"; };
+		3C1717F029B493B500B19B27 /* PhongShadingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhongShadingScene.swift; sourceTree = "<group>"; };
+		3C1717F329B493CE00B19B27 /* Sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandbox.swift; sourceTree = "<group>"; };
+		3C1717FB29B4940900B19B27 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		3C1717FD29B4941400B19B27 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3C17180029B4945000B19B27 /* RendererManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererManager.swift; sourceTree = "<group>"; };
+		3C17180329B4946700B19B27 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		3C17180529B4947400B19B27 /* RayTracingRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayTracingRenderer.swift; sourceTree = "<group>"; };
+		3C17180729B4948800B19B27 /* PhongRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhongRenderer.swift; sourceTree = "<group>"; };
+		3C17180A29B494A800B19B27 /* RendererView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererView.swift; sourceTree = "<group>"; };
+		3C17180C29B494B700B19B27 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3C17180E29B494C600B19B27 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		3C17181029B494D800B19B27 /* MetalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MetalView.storyboard; sourceTree = "<group>"; };
+		3C20588129D0287300423DA2 /* AnimationCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCamera.swift; sourceTree = "<group>"; };
+		3C2B16802A166FB1006CDD75 /* HarmonicCubes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonicCubes.swift; sourceTree = "<group>"; };
+		3C538FEA2A3709A7000CC8C5 /* Ocean_100.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ocean_100.mtl; sourceTree = "<group>"; };
+		3C538FEB2A3709A7000CC8C5 /* Ocean_100.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ocean_100.obj; sourceTree = "<group>"; };
+		3C54789129B98D7D00D20911 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		3C54789329B98E0900D20911 /* SceneSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSettings.swift; sourceTree = "<group>"; };
+		3C8C03DD2A3A0AF8001F0058 /* Skybox.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Skybox.metal; sourceTree = "<group>"; };
+		3C8C03DF2A3A12D5001F0058 /* EnchantingGlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnchantingGlow.swift; sourceTree = "<group>"; };
+		3CA5D66B2A36D77900EF3ECC /* Ocean_20.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ocean_20.mtl; sourceTree = "<group>"; };
+		3CA5D66C2A36D77900EF3ECC /* Ocean_20.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ocean_20.obj; sourceTree = "<group>"; };
+		3CA9C92D2A39A06F00B4DBED /* Ocean.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Ocean.metal; sourceTree = "<group>"; };
+		3CC00A572A3444EF00602E75 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		3CD0114529B3A8700009DEC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3CD0114729B3B4D70009DEC6 /* FlutterCommunicationBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterCommunicationBridge.swift; sourceTree = "<group>"; };
+		3CD0114929B3BE840009DEC6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		3CD0114B29B3BED60009DEC6 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		3CD0114E29B3BEF80009DEC6 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		3CD0115029B3BF150009DEC6 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		3CE728B029B629060073AC4C /* FlutterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterModels.swift; sourceTree = "<group>"; };
+		3CFEAB2629B4F23500440CF5 /* NightCity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NightCity.jpg; sourceTree = "<group>"; };
+		3CFEAB7229B4F23500440CF5 /* Beach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Beach.jpeg; sourceTree = "<group>"; };
+		3CFEAB7529B4F23500440CF5 /* Icosphere.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Icosphere.mtl; sourceTree = "<group>"; };
+		3CFEAB7629B4F23500440CF5 /* Icosphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Icosphere.obj; sourceTree = "<group>"; };
+		3CFEAB7829B4F23500440CF5 /* Torus.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Torus.obj; sourceTree = "<group>"; };
+		3CFEAB7929B4F23500440CF5 /* Torus.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Torus.mtl; sourceTree = "<group>"; };
+		3CFEAB7B29B4F23500440CF5 /* Cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cube.obj; sourceTree = "<group>"; };
+		3CFEAB7C29B4F23500440CF5 /* Cube.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cube.mtl; sourceTree = "<group>"; };
+		3CFEAB7E29B4F23500440CF5 /* Cone.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cone.obj; sourceTree = "<group>"; };
+		3CFEAB7F29B4F23500440CF5 /* Cone.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cone.mtl; sourceTree = "<group>"; };
+		3CFEAB8129B4F23500440CF5 /* Sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sphere.obj; sourceTree = "<group>"; };
+		3CFEAB8229B4F23500440CF5 /* Sphere.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sphere.mtl; sourceTree = "<group>"; };
+		3CFEAB8429B4F23500440CF5 /* Plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plane.obj; sourceTree = "<group>"; };
+		3CFEAB8529B4F23500440CF5 /* Plane.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plane.mtl; sourceTree = "<group>"; };
+		3CFEAB8729B4F23500440CF5 /* Monkey.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monkey.mtl; sourceTree = "<group>"; };
+		3CFEAB8829B4F23500440CF5 /* Monkey.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monkey.obj; sourceTree = "<group>"; };
+		3CFEAB8A29B4F23500440CF5 /* Cylinder.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cylinder.mtl; sourceTree = "<group>"; };
+		3CFEAB8B29B4F23500440CF5 /* Cylinder.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cylinder.obj; sourceTree = "<group>"; };
+		3CFEAB8C29B4F23500440CF5 /* Jungle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jungle.jpg; sourceTree = "<group>"; };
+		3CFEAB8D29B4F23500440CF5 /* Sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sky.jpg; sourceTree = "<group>"; };
+		3CFEAB8F29B4F23500440CF5 /* chest.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.obj; sourceTree = "<group>"; };
+		3CFEAB9029B4F23500440CF5 /* chest_02_Base_Color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest_02_Base_Color.png; sourceTree = "<group>"; };
+		3CFEAB9129B4F23500440CF5 /* chest_01_Roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest_01_Roughness.png; sourceTree = "<group>"; };
+		3CFEAB9229B4F23500440CF5 /* chest_02_Metallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest_02_Metallic.png; sourceTree = "<group>"; };
+		3CFEAB9329B4F23500440CF5 /* chest_02_Roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest_02_Roughness.png; sourceTree = "<group>"; };
+		3CFEAB9429B4F23500440CF5 /* chest_01_Base_Color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest_01_Base_Color.png; sourceTree = "<group>"; };
+		3CFEAB9529B4F23500440CF5 /* chest_02_Mixed_AO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest_02_Mixed_AO.png; sourceTree = "<group>"; };
+		3CFEAB9629B4F23500440CF5 /* chest_01_Metallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest_01_Metallic.png; sourceTree = "<group>"; };
+		3CFEAB9729B4F23500440CF5 /* chest_01_Mixed_AO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chest_01_Mixed_AO.png; sourceTree = "<group>"; };
+		3CFEAB9829B4F23500440CF5 /* chest.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.mtl; sourceTree = "<group>"; };
+		74AE5BEDA4BD2CBCD8955BF9 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		B80F253DF9C157A6A840991B /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33CC10EA2044A3C60003C045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DE08D8E4C99FC22DF5BCA7 /* Pods_Runner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33BA886A226E78AF003329D5 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				33E5194F232828860026EE4D /* AppInfo.xcconfig */,
+				9740EEB21CF90195004384FC /* Debug.xcconfig */,
+				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
+				333000ED22D3DE5D00554162 /* Warnings.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		33CC10E42044A3C60003C045 = {
+			isa = PBXGroup;
+			children = (
+				33FAB671232836740065AC1E /* Runner */,
+				33CEB47122A05771004F2AC0 /* Flutter */,
+				33CC10EE2044A3C60003C045 /* Products */,
+				D73912EC22F37F3D000D13A0 /* Frameworks */,
+				6E43F37EBE7EFC83121A4986 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		33CC10EE2044A3C60003C045 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33CC10ED2044A3C60003C045 /* blue_engine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33CC11242044D66E0003C045 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33CC10F22044A3C60003C045 /* Assets.xcassets */,
+				33CC10F72044A3C60003C045 /* Info.plist */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		33CEB47122A05771004F2AC0 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */,
+				33CEB47222A05771004F2AC0 /* Flutter-Debug.xcconfig */,
+				33CEB47422A05771004F2AC0 /* Flutter-Release.xcconfig */,
+				33CEB47722A0578A004F2AC0 /* Flutter-Generated.xcconfig */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		33FAB671232836740065AC1E /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717AA29B48FE100B19B27 /* Engine */,
+				3CD0114229B3A8410009DEC6 /* UI */,
+				33CC10F02044A3C60003C045 /* AppDelegate.swift */,
+				33E51913231747F40026EE4D /* DebugProfile.entitlements */,
+				33E51914231749380026EE4D /* Release.entitlements */,
+				33CC11242044D66E0003C045 /* Resources */,
+				33BA886A226E78AF003329D5 /* Configs */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		3C1713D529B48D9700B19B27 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				33CC11122044BFA00003C045 /* MainFlutterWindow.swift */,
+				3CD0114729B3B4D70009DEC6 /* FlutterCommunicationBridge.swift */,
+				3CE728B029B629060073AC4C /* FlutterModels.swift */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		3C1717AA29B48FE100B19B27 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEA9DE29B4F23500440CF5 /* res */,
+				3C1717AB29B48FED00B19B27 /* Core */,
+				3C1717BC29B490B400B19B27 /* Input */,
+				3C1717C329B490EC00B19B27 /* Camera */,
+				3C1717CA29B4912500B19B27 /* Libraries */,
+				3C1717DB29B491C900B19B27 /* Shaders */,
+				3C1717E729B4934B00B19B27 /* Scene */,
+				3C1717FF29B4941F00B19B27 /* Renderer */,
+				3C17180929B4949800B19B27 /* Display */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		3C1717AB29B48FED00B19B27 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717B029B4902500B19B27 /* Engine.swift */,
+				3C1717B229B4903800B19B27 /* Preferences.swift */,
+				3C1717B429B4904C00B19B27 /* Heap.swift */,
+				3C1717AC29B48FFA00B19B27 /* Math.swift */,
+				3C1717AE29B4901000B19B27 /* Mesh.swift */,
+				3C1717B629B4905700B19B27 /* Types.swift */,
+				3C1717B829B4906700B19B27 /* Node.swift */,
+				3C1717BA29B4907800B19B27 /* Solid.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3C1717BC29B490B400B19B27 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717BD29B490C200B19B27 /* KeyCodes.swift */,
+				3C1717BF29B490D100B19B27 /* Mouse.swift */,
+				3C1717C129B490DF00B19B27 /* Keyboard.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		3C1717C329B490EC00B19B27 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717C629B4910800B19B27 /* CameraManager.swift */,
+				3C1717C429B490FC00B19B27 /* Camera.swift */,
+				3C1717C829B4911400B19B27 /* DebugCamera.swift */,
+				3C20588129D0287300423DA2 /* AnimationCamera.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		3C1717CA29B4912500B19B27 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717CB29B4914500B19B27 /* Skybox.swift */,
+				3C1717CD29B4915300B19B27 /* MeshLibrary.swift */,
+				3C1717CF29B4916800B19B27 /* RenderPipelineState.swift */,
+				3C1717D129B4917800B19B27 /* RenderPipelineDescriptor.swift */,
+				3C1717D329B4918D00B19B27 /* ComputePipelineState.swift */,
+				3C1717D529B491A000B19B27 /* ComputePipelineDescriptor.swift */,
+				3C1717D729B491AE00B19B27 /* VertexDescriptor.swift */,
+				3C1717D929B491BD00B19B27 /* DepthStencilStateLibrary.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		3C1717DB29B491C900B19B27 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717DC29B491DF00B19B27 /* Transform.metal */,
+				3C1717DE29B491EF00B19B27 /* RayTracing.metal */,
+				3C1717E029B491FC00B19B27 /* PhongShader.metal */,
+				3C1717E229B4921B00B19B27 /* Lighting.metal */,
+				3CA9C92D2A39A06F00B4DBED /* Ocean.metal */,
+				3C8C03DD2A3A0AF8001F0058 /* Skybox.metal */,
+				3C1717E629B4930C00B19B27 /* Runner-Bridging-Header.h */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		3C1717E729B4934B00B19B27 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717E829B4936000B19B27 /* RenderableScene */,
+				3C1717F229B493C200B19B27 /* Scenes */,
+				3C1717FB29B4940900B19B27 /* SceneManager.swift */,
+				3C54789329B98E0900D20911 /* SceneSettings.swift */,
+				3C1717FD29B4941400B19B27 /* GameScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3C1717E829B4936000B19B27 /* RenderableScene */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717E929B4937200B19B27 /* RenderableScene.swift */,
+				3C1717EB29B4937800B19B27 /* RenderableScenes */,
+			);
+			path = RenderableScene;
+			sourceTree = "<group>";
+		};
+		3C1717EB29B4937800B19B27 /* RenderableScenes */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717EC29B4938C00B19B27 /* StaticRTScene.swift */,
+				3C1717EE29B493A000B19B27 /* DynamicRTScene.swift */,
+				3C1717F029B493B500B19B27 /* PhongShadingScene.swift */,
+			);
+			path = RenderableScenes;
+			sourceTree = "<group>";
+		};
+		3C1717F229B493C200B19B27 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3C1717F329B493CE00B19B27 /* Sandbox.swift */,
+				3C2B16802A166FB1006CDD75 /* HarmonicCubes.swift */,
+				3C8C03DF2A3A12D5001F0058 /* EnchantingGlow.swift */,
+				3CC00A572A3444EF00602E75 /* Ocean.swift */,
+				3C54789129B98D7D00D20911 /* Custom.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3C1717FF29B4941F00B19B27 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				3C17180229B4945C00B19B27 /* Renderers */,
+				3C17180329B4946700B19B27 /* Renderer.swift */,
+				3C17180029B4945000B19B27 /* RendererManager.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		3C17180229B4945C00B19B27 /* Renderers */ = {
+			isa = PBXGroup;
+			children = (
+				3C17180529B4947400B19B27 /* RayTracingRenderer.swift */,
+				3C17180729B4948800B19B27 /* PhongRenderer.swift */,
+			);
+			path = Renderers;
+			sourceTree = "<group>";
+		};
+		3C17180929B4949800B19B27 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				3C17181029B494D800B19B27 /* MetalView.storyboard */,
+				3C17180A29B494A800B19B27 /* RendererView.swift */,
+				3C17180C29B494B700B19B27 /* GameViewController.swift */,
+				3C17180E29B494C600B19B27 /* GameView.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		3CD0114229B3A8410009DEC6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3C1713D529B48D9700B19B27 /* Flutter */,
+				3CD0114429B3A8560009DEC6 /* ViewModels */,
+				3CD0114329B3A84C0009DEC6 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3CD0114329B3A84C0009DEC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CD0114D29B3BEE40009DEC6 /* Widgets */,
+				3CD0114529B3A8700009DEC6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CD0114429B3A8560009DEC6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3CD0114929B3BE840009DEC6 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3CD0114D29B3BEE40009DEC6 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				3CD0114B29B3BED60009DEC6 /* Sidebar.swift */,
+				3CD0114E29B3BEF80009DEC6 /* TabButton.swift */,
+				3CD0115029B3BF150009DEC6 /* BlurView.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		3CE44B682A35FB6B0088BEBF /* Ocean */ = {
+			isa = PBXGroup;
+			children = (
+				3C538FEA2A3709A7000CC8C5 /* Ocean_100.mtl */,
+				3C538FEB2A3709A7000CC8C5 /* Ocean_100.obj */,
+				3CA5D66B2A36D77900EF3ECC /* Ocean_20.mtl */,
+				3CA5D66C2A36D77900EF3ECC /* Ocean_20.obj */,
+			);
+			path = Ocean;
+			sourceTree = "<group>";
+		};
+		3CFEA9DE29B4F23500440CF5 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB8D29B4F23500440CF5 /* Sky.jpg */,
+				3CFEAB8C29B4F23500440CF5 /* Jungle.jpg */,
+				3CFEAB7229B4F23500440CF5 /* Beach.jpeg */,
+				3CFEAB2629B4F23500440CF5 /* NightCity.jpg */,
+				3CFEAB8E29B4F23500440CF5 /* chest */,
+				3CFEAB7329B4F23500440CF5 /* Meshes */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		3CFEAB7329B4F23500440CF5 /* Meshes */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB8329B4F23500440CF5 /* Plane */,
+				3CFEAB7A29B4F23500440CF5 /* Cube */,
+				3CFEAB8029B4F23500440CF5 /* Sphere */,
+				3CFEAB7729B4F23500440CF5 /* Torus */,
+				3CFEAB7D29B4F23500440CF5 /* Cone */,
+				3CFEAB8629B4F23500440CF5 /* Monkey */,
+				3CFEAB8929B4F23500440CF5 /* Cylinder */,
+				3CFEAB7429B4F23500440CF5 /* Icosphere */,
+				3CE44B682A35FB6B0088BEBF /* Ocean */,
+			);
+			path = Meshes;
+			sourceTree = "<group>";
+		};
+		3CFEAB7429B4F23500440CF5 /* Icosphere */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB7529B4F23500440CF5 /* Icosphere.mtl */,
+				3CFEAB7629B4F23500440CF5 /* Icosphere.obj */,
+			);
+			path = Icosphere;
+			sourceTree = "<group>";
+		};
+		3CFEAB7729B4F23500440CF5 /* Torus */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB7829B4F23500440CF5 /* Torus.obj */,
+				3CFEAB7929B4F23500440CF5 /* Torus.mtl */,
+			);
+			path = Torus;
+			sourceTree = "<group>";
+		};
+		3CFEAB7A29B4F23500440CF5 /* Cube */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB7B29B4F23500440CF5 /* Cube.obj */,
+				3CFEAB7C29B4F23500440CF5 /* Cube.mtl */,
+			);
+			path = Cube;
+			sourceTree = "<group>";
+		};
+		3CFEAB7D29B4F23500440CF5 /* Cone */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB7E29B4F23500440CF5 /* Cone.obj */,
+				3CFEAB7F29B4F23500440CF5 /* Cone.mtl */,
+			);
+			path = Cone;
+			sourceTree = "<group>";
+		};
+		3CFEAB8029B4F23500440CF5 /* Sphere */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB8129B4F23500440CF5 /* Sphere.obj */,
+				3CFEAB8229B4F23500440CF5 /* Sphere.mtl */,
+			);
+			path = Sphere;
+			sourceTree = "<group>";
+		};
+		3CFEAB8329B4F23500440CF5 /* Plane */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB8429B4F23500440CF5 /* Plane.obj */,
+				3CFEAB8529B4F23500440CF5 /* Plane.mtl */,
+			);
+			path = Plane;
+			sourceTree = "<group>";
+		};
+		3CFEAB8629B4F23500440CF5 /* Monkey */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB8729B4F23500440CF5 /* Monkey.mtl */,
+				3CFEAB8829B4F23500440CF5 /* Monkey.obj */,
+			);
+			path = Monkey;
+			sourceTree = "<group>";
+		};
+		3CFEAB8929B4F23500440CF5 /* Cylinder */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB8A29B4F23500440CF5 /* Cylinder.mtl */,
+				3CFEAB8B29B4F23500440CF5 /* Cylinder.obj */,
+			);
+			path = Cylinder;
+			sourceTree = "<group>";
+		};
+		3CFEAB8E29B4F23500440CF5 /* chest */ = {
+			isa = PBXGroup;
+			children = (
+				3CFEAB8F29B4F23500440CF5 /* chest.obj */,
+				3CFEAB9029B4F23500440CF5 /* chest_02_Base_Color.png */,
+				3CFEAB9129B4F23500440CF5 /* chest_01_Roughness.png */,
+				3CFEAB9229B4F23500440CF5 /* chest_02_Metallic.png */,
+				3CFEAB9329B4F23500440CF5 /* chest_02_Roughness.png */,
+				3CFEAB9429B4F23500440CF5 /* chest_01_Base_Color.png */,
+				3CFEAB9529B4F23500440CF5 /* chest_02_Mixed_AO.png */,
+				3CFEAB9629B4F23500440CF5 /* chest_01_Metallic.png */,
+				3CFEAB9729B4F23500440CF5 /* chest_01_Mixed_AO.png */,
+				3CFEAB9829B4F23500440CF5 /* chest.mtl */,
+			);
+			path = chest;
+			sourceTree = "<group>";
+		};
+		6E43F37EBE7EFC83121A4986 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EC1ECEDD37930C07F6F9AAD /* Pods-Runner.debug.xcconfig */,
+				3462DE1167094CC924443280 /* Pods-Runner.release.xcconfig */,
+				B80F253DF9C157A6A840991B /* Pods-Runner.profile.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D73912EC22F37F3D000D13A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74AE5BEDA4BD2CBCD8955BF9 /* Pods_Runner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33CC10EC2044A3C60003C045 /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33CC10FB2044A3C60003C045 /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				E184B24FBFFED6CDADA2B285 /* [CP] Check Pods Manifest.lock */,
+				33CC10E92044A3C60003C045 /* Sources */,
+				33CC10EA2044A3C60003C045 /* Frameworks */,
+				33CC10EB2044A3C60003C045 /* Resources */,
+				33CC110E2044A8840003C045 /* Bundle Framework */,
+				3399D490228B24CF009A79C7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33CC11202044C79F0003C045 /* PBXTargetDependency */,
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 33CC10ED2044A3C60003C045 /* blue_engine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33CC10E52044A3C60003C045 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1510;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					33CC10EC2044A3C60003C045 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1410;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					33CC111A2044C6BA0003C045 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 33CC10E82044A3C60003C045 /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33CC10E42044A3C60003C045;
+			productRefGroup = 33CC10EE2044A3C60003C045 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33CC10EC2044A3C60003C045 /* Runner */,
+				33CC111A2044C6BA0003C045 /* Flutter Assemble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33CC10EB2044A3C60003C045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C17181129B494D800B19B27 /* MetalView.storyboard in Resources */,
+				3CFEAD3C29B4F23600440CF5 /* chest_02_Base_Color.png in Resources */,
+				3CFEAD3829B4F23600440CF5 /* Cylinder.obj in Resources */,
+				3CFEAD3229B4F23600440CF5 /* Sphere.mtl in Resources */,
+				3CFEAD2829B4F23600440CF5 /* Beach.jpeg in Resources */,
+				3CFEAD3B29B4F23600440CF5 /* chest.obj in Resources */,
+				3CFEAD4229B4F23600440CF5 /* chest_01_Metallic.png in Resources */,
+				3CFEAD4129B4F23600440CF5 /* chest_02_Mixed_AO.png in Resources */,
+				3CFEAD3429B4F23600440CF5 /* Plane.mtl in Resources */,
+				3CFEAD2B29B4F23600440CF5 /* Torus.obj in Resources */,
+				3CFEAD3D29B4F23600440CF5 /* chest_01_Roughness.png in Resources */,
+				3CFEAD3F29B4F23600440CF5 /* chest_02_Roughness.png in Resources */,
+				3CFEAD3729B4F23600440CF5 /* Cylinder.mtl in Resources */,
+				33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */,
+				3CFEAD3029B4F23600440CF5 /* Cone.mtl in Resources */,
+				3CFEAD3529B4F23600440CF5 /* Monkey.mtl in Resources */,
+				3CFEAD2C29B4F23600440CF5 /* Torus.mtl in Resources */,
+				3CFEAD3A29B4F23600440CF5 /* Sky.jpg in Resources */,
+				3CFEAD4429B4F23600440CF5 /* chest.mtl in Resources */,
+				3CFEACDF29B4F23600440CF5 /* NightCity.jpg in Resources */,
+				3CFEAD3129B4F23600440CF5 /* Sphere.obj in Resources */,
+				3CFEAD2A29B4F23600440CF5 /* Icosphere.obj in Resources */,
+				3CFEAD3E29B4F23600440CF5 /* chest_02_Metallic.png in Resources */,
+				3CFEAD3929B4F23600440CF5 /* Jungle.jpg in Resources */,
+				3CFEAD4029B4F23600440CF5 /* chest_01_Base_Color.png in Resources */,
+				3CFEAD3329B4F23600440CF5 /* Plane.obj in Resources */,
+				3CFEAD4329B4F23600440CF5 /* chest_01_Mixed_AO.png in Resources */,
+				3CFEAD2F29B4F23600440CF5 /* Cone.obj in Resources */,
+				3CFEAD2D29B4F23600440CF5 /* Cube.obj in Resources */,
+				3CFEAD2929B4F23600440CF5 /* Icosphere.mtl in Resources */,
+				3CFEAD3629B4F23600440CF5 /* Monkey.obj in Resources */,
+				3CFEAD2E29B4F23600440CF5 /* Cube.mtl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3399D490228B24CF009A79C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"$PRODUCT_NAME.app\" > \"$PROJECT_DIR\"/Flutter/ephemeral/.app_filename && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/macos_assemble.sh embed\n";
+		};
+		33CC111E2044C6BF0003C045 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				Flutter/ephemeral/FlutterInputs.xcfilelist,
+			);
+			inputPaths = (
+				Flutter/ephemeral/tripwire,
+			);
+			outputFileListPaths = (
+				Flutter/ephemeral/FlutterOutputs.xcfilelist,
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/macos_assemble.sh && touch Flutter/ephemeral/tripwire";
+		};
+		E184B24FBFFED6CDADA2B285 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33CC10E92044A3C60003C045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C1717D829B491AE00B19B27 /* VertexDescriptor.swift in Sources */,
+				3C20588229D0287300423DA2 /* AnimationCamera.swift in Sources */,
+				3C1717C929B4911400B19B27 /* DebugCamera.swift in Sources */,
+				3C1717BE29B490C200B19B27 /* KeyCodes.swift in Sources */,
+				3CD0114829B3B4D70009DEC6 /* FlutterCommunicationBridge.swift in Sources */,
+				3C1717D229B4917800B19B27 /* RenderPipelineDescriptor.swift in Sources */,
+				3C1717ED29B4938C00B19B27 /* StaticRTScene.swift in Sources */,
+				3C1717D029B4916800B19B27 /* RenderPipelineState.swift in Sources */,
+				3C17180829B4948800B19B27 /* PhongRenderer.swift in Sources */,
+				3C1717D429B4918D00B19B27 /* ComputePipelineState.swift in Sources */,
+				3C1717C229B490DF00B19B27 /* Keyboard.swift in Sources */,
+				3C8C03E02A3A12D5001F0058 /* EnchantingGlow.swift in Sources */,
+				3C1717B329B4903800B19B27 /* Preferences.swift in Sources */,
+				3C17180B29B494A800B19B27 /* RendererView.swift in Sources */,
+				3CC00A582A3444EF00602E75 /* Ocean.swift in Sources */,
+				3C1717B129B4902500B19B27 /* Engine.swift in Sources */,
+				3C1717CE29B4915300B19B27 /* MeshLibrary.swift in Sources */,
+				3C1717C529B490FC00B19B27 /* Camera.swift in Sources */,
+				3C1717DD29B491DF00B19B27 /* Transform.metal in Sources */,
+				3C1717E129B491FC00B19B27 /* PhongShader.metal in Sources */,
+				3CE728B129B629060073AC4C /* FlutterModels.swift in Sources */,
+				3C8C03DE2A3A0AF8001F0058 /* Skybox.metal in Sources */,
+				3C1717CC29B4914500B19B27 /* Skybox.swift in Sources */,
+				3C54789429B98E0900D20911 /* SceneSettings.swift in Sources */,
+				3C1717AF29B4901000B19B27 /* Mesh.swift in Sources */,
+				3C1717E329B4921B00B19B27 /* Lighting.metal in Sources */,
+				3C1717EF29B493A000B19B27 /* DynamicRTScene.swift in Sources */,
+				3C1717DA29B491BD00B19B27 /* DepthStencilStateLibrary.swift in Sources */,
+				3C1717EA29B4937200B19B27 /* RenderableScene.swift in Sources */,
+				33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */,
+				3C1717D629B491A000B19B27 /* ComputePipelineDescriptor.swift in Sources */,
+				3C1717B729B4905700B19B27 /* Types.swift in Sources */,
+				3C1717DF29B491EF00B19B27 /* RayTracing.metal in Sources */,
+				3CD0114A29B3BE840009DEC6 /* ContentViewModel.swift in Sources */,
+				3C1717C729B4910800B19B27 /* CameraManager.swift in Sources */,
+				33CC10F12044A3C60003C045 /* AppDelegate.swift in Sources */,
+				3C17180629B4947400B19B27 /* RayTracingRenderer.swift in Sources */,
+				3C17180429B4946700B19B27 /* Renderer.swift in Sources */,
+				3C1717FE29B4941400B19B27 /* GameScene.swift in Sources */,
+				3C1717BB29B4907800B19B27 /* Solid.swift in Sources */,
+				3C2B16812A166FB1006CDD75 /* HarmonicCubes.swift in Sources */,
+				3C17180129B4945000B19B27 /* RendererManager.swift in Sources */,
+				3CD0114629B3A8700009DEC6 /* ContentView.swift in Sources */,
+				3C1717F129B493B500B19B27 /* PhongShadingScene.swift in Sources */,
+				3C1717F429B493CE00B19B27 /* Sandbox.swift in Sources */,
+				3C17180D29B494B700B19B27 /* GameViewController.swift in Sources */,
+				3CD0115129B3BF150009DEC6 /* BlurView.swift in Sources */,
+				3C1717C029B490D100B19B27 /* Mouse.swift in Sources */,
+				3CD0114F29B3BEF80009DEC6 /* TabButton.swift in Sources */,
+				3C1717B929B4906700B19B27 /* Node.swift in Sources */,
+				3C1717FC29B4940900B19B27 /* SceneManager.swift in Sources */,
+				3CD0114C29B3BED60009DEC6 /* Sidebar.swift in Sources */,
+				3CA9C92E2A39A06F00B4DBED /* Ocean.metal in Sources */,
+				335BBD1B22A9A15E00E9071D /* GeneratedPluginRegistrant.swift in Sources */,
+				3C1717AD29B48FFA00B19B27 /* Math.swift in Sources */,
+				3C54789229B98D7D00D20911 /* Custom.swift in Sources */,
+				3C17180F29B494C600B19B27 /* GameView.swift in Sources */,
+				3C1717B529B4904C00B19B27 /* Heap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33CC11202044C79F0003C045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33CC111A2044C6BA0003C045 /* Flutter Assemble */;
+			targetProxy = 33CC111F2044C79F0003C045 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		338D0CE9231458BD00FA5F75 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Runner/Engine/Shader/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Profile;
+		};
+		338D0CEA231458BD00FA5F75 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E5194F232828860026EE4D /* AppInfo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/DebugProfile.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = J4G3GZMA4G;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Engine/Shaders/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Profile;
+		};
+		338D0CEB231458BD00FA5F75 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Profile;
+		};
+		33CC10F92044A3C60003C045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Runner/Engine/Shader/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33CC10FA2044A3C60003C045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Runner/Engine/Shader/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		33CC10FC2044A3C60003C045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E5194F232828860026EE4D /* AppInfo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/DebugProfile.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = J4G3GZMA4G;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Engine/Shaders/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		33CC10FD2044A3C60003C045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E5194F232828860026EE4D /* AppInfo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Release.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = J4G3GZMA4G;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Engine/Shaders/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		33CC111C2044C6BA0003C045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33CC111D2044C6BA0003C045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33CC10E82044A3C60003C045 /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CC10F92044A3C60003C045 /* Debug */,
+				33CC10FA2044A3C60003C045 /* Release */,
+				338D0CE9231458BD00FA5F75 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CC10FB2044A3C60003C045 /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CC10FC2044A3C60003C045 /* Debug */,
+				33CC10FD2044A3C60003C045 /* Release */,
+				338D0CEA231458BD00FA5F75 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CC111B2044C6BA0003C045 /* Build configuration list for PBXAggregateTarget "Flutter Assemble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CC111C2044C6BA0003C045 /* Debug */,
+				33CC111D2044C6BA0003C045 /* Release */,
+				338D0CEB231458BD00FA5F75 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33CC10E52044A3C60003C045 /* Project object */;
+}
